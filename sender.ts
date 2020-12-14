@@ -1,7 +1,7 @@
 import AWS, { SQS } from "aws-sdk";
 
 // AWS config & url
-import { sqsConfig, sqsUrl } from "./AWSConfig";
+import { sqsConfig, sqsQueue, sqsUrl } from "./AWSConfig";
 
 // Update config
 AWS.config.update(sqsConfig);
@@ -32,7 +32,7 @@ const params = {
   MessageBody: "Information about current NY Times fiction bestseller for week of 12/11/2016!",
   // MessageDeduplicationId: "TheWhistler",  // Required for FIFO queues
   // MessageGroupId: "Group1",  // Required for FIFO queues
-  QueueUrl: sqsUrl + "/queue/first-queue"
+  QueueUrl: sqsQueue
 };
 
 

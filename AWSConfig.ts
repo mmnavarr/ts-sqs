@@ -5,5 +5,6 @@ const sqsConfig = {
 }
 
 const sqsUrl = "http://localhost:9324";
+const sqsQueue = `${sqsUrl}/queue/main-queue`;
 
-export { sqsConfig, sqsUrl };
+export { sqsConfig, sqsUrl, sqsQueue };
