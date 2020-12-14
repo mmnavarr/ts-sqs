@@ -1,10 +1,11 @@
 {
-  "name": "sqs",
+  "name": "ts-sqs",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start-sender": "ts-node sender.ts",
+    "start-receiver": "ts-node receiver.ts",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
