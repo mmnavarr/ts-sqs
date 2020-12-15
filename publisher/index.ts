@@ -13,11 +13,15 @@ const sqs = new SQS({
   apiVersion: "latest"
 });
 
+// Set body message from first CLI argument after command
+const messageBody = process.argv[2] || "Information about current NY Times fiction bestseller for week of 12/11/2016!";
+
+// Define message request object
 const message: SendMessageRequest = {
   // Remove DelaySeconds parameter and value for FIFO queues
   DelaySeconds: 2,
   // Enter serialized JSON for MessageBody value to publish messages
-  MessageBody: "Information about current NY Times fiction bestseller for week of 12/11/2016!",
+  MessageBody: messageBody,
   // Define the URL + queue to send to
   QueueUrl: sqsQueue
 };
