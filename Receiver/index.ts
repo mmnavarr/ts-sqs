@@ -2,7 +2,7 @@ import { Consumer } from "sqs-consumer";
 import AWS from "aws-sdk";
 
 // AWS config/url
-import { sqsConfig, sqsQueue } from "./AWSConfig";
+import { sqsConfig, sqsQueue } from "../AWSConfig";
 
 // Update config
 AWS.config.update(sqsConfig);

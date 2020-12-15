@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start-sender": "ts-node sender.ts",
-    "start-receiver": "ts-node receiver.ts",
+    "start-sender": "ts-node ./Sender",
+    "start-receiver": "ts-node ./Receiver",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
