@@ -1,6 +1,6 @@
-# AWS SQS Consumer x Publisher
+# LOCAL AWS SQS Consumer x Publisher
 
-This project includes products: An SQS `consumer` and an SQS `publisher`. Both can be used as a standalone application consuming & publishing from an SQS queue (local and remote) but this repository will show you how to run it locally.
+This project includes an locally runnable SQS `consumer` and an SQS `publisher`. Both can be used as a standalone application consuming & publishing from an SQS queue (local and remote) but this repository will show you how to run it locally.
 
 ElasticMQ is a message queue system, offering an actor-based Scala and an SQS-compatible REST (query) interface. It runs in-memory and is extremely performant. For these reasons, it's the perfect way to locally publish SQS-compatible messages for development and testing purposes.
 
